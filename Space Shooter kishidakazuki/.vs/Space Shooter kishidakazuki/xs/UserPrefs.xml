@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{7C17D734-B3D2-7B85-0447-2259CB46E2CD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Item.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="50" Column="17" />
       <File FileName="Assets/Scripts/Mover.cs" Line="13" Column="6" />
