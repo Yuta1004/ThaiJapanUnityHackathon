@@ -12,9 +12,6 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public Boundary boundary;
     public float tilt;
-    public GameObject shot;
-    public Transform shotSpawn;
-    public float fireRate;
     public float yFix = 0.0f;
 
     private Rigidbody rb;
@@ -25,16 +22,6 @@ public class PlayerController : MonoBehaviour {
         
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-    }
-
-    void Update(){
-        
-        if (Input.GetButton("Fire1") && Time.time > nextFire){
-            
-            nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-            audioSource.Play();
-        }
     }
 
     void FixedUpdate(){
@@ -50,6 +37,7 @@ public class PlayerController : MonoBehaviour {
             yFix,
             Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
         );
+        //横移動のとき，傾ける
         rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
     }
 }
