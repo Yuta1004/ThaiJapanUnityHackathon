@@ -1,3 +1,3 @@
 # ThaiJapanUnityHackathon
 
-- タイ日Unityハッカソン YuGEnity リポジトり
+- タイ日Unityハッカソン YuGEnity リポジトリ
