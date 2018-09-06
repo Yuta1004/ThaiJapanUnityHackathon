@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
     public Text restartText;
     public Text gameOverText;
+    public Text bonusText;
+    public int bonusScore;
 
     private bool gameOver;
     private bool restart;
@@ -27,6 +29,7 @@ public class GameController : MonoBehaviour {
         restart = false;
         restartText.text = "";
         gameOverText.text = "";
+        bonusText.text = "";
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
@@ -73,6 +76,18 @@ public class GameController : MonoBehaviour {
     void UpdateScore(){
         
         scoreText.text = "Score: " + score;
+    }
+
+    public void Bonus(){
+
+        score += bonusScore;
+        UpdateScore();
+        bonusText.text = "+" + bonusScore + "BONUS";
+        Invoke("DefBonusText", 0.5f);
+    }
+
+    void DefBonusText(){
+        bonusText.text = "";
     }
 
     public void GameOver(){

@@ -10,8 +10,20 @@ public class Replacement : MonoBehaviour {
 
     private Vector3 originSiza;
     private int count;
+    private GameController gameController;
 
 	void Start(){
+
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null){
+
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null){
+
+            Debug.Log("Cannot find 'GameController' script");
+        }
+
         if(isSelect){
             this.transform.position = new Vector3(0.0f, 0.0f, 5.0f);
         }else{
@@ -41,6 +53,7 @@ public class Replacement : MonoBehaviour {
             
             size = originSiza;
             count = 0;
+            gameController.Bonus();
         }
         this.transform.localScale = size;
     }
