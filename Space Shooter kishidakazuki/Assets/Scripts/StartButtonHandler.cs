@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartButtonHandler : MonoBehaviour {
 
@@ -15,6 +16,6 @@ public class StartButtonHandler : MonoBehaviour {
 	}
 
 	public void OnClick() {
-		Debug.Log("start button pressed");
+		SceneManager.LoadScene("stage1");
 	}
 }
