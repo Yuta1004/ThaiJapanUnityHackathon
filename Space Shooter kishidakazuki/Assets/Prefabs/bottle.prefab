@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4463049606185008}
   - component: {fileID: 33438934777598062}
   - component: {fileID: 23266693880873142}
-  - component: {fileID: 95025618565151040}
   m_Layer: 0
   m_Name: bottle
   m_TagString: Untagged
@@ -131,23 +130,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &95025618565151040
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1641568204907240}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2dd67fdcd4fb50041853ad2eabfe54ae, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114134704667553826
 MonoBehaviour:
   m_ObjectHideFlags: 1
