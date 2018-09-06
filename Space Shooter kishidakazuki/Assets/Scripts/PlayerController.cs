@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Boundary{
@@ -18,6 +19,12 @@ public class PlayerController : MonoBehaviour {
     public GameObject BlueGarbageBag;
     public GameObject GreenGarbageBag;
     public int getWasteScore;
+    public Sprite moeru;
+    public Sprite moenai;
+    public Sprite bin;
+    public Sprite can;
+    public Image mark1;
+    public Image mark2;
 
     private Rigidbody rb;
     private float nextFire;
@@ -39,6 +46,7 @@ public class PlayerController : MonoBehaviour {
         red = RedGarbageBag.GetComponent<Replacement>();
         blue = BlueGarbageBag.GetComponent<Replacement>();
         green = GreenGarbageBag.GetComponent<Replacement>();
+
     }
 
     void FixedUpdate(){
@@ -60,19 +68,36 @@ public class PlayerController : MonoBehaviour {
 
 
     void Update(){
-        Vector3 playerBack = new Vector3(rb.position.x, 0.0f, 5.0f); 
+        Vector3 playerBack = new Vector3(rb.position.x, 0.0f, 5.0f);
         if (Input.GetKeyDown(KeyCode.Z) && !red.isSelect){
             red.Updown(true, playerBack);
             blue.Updown(false, playerBack);
             green.Updown(false, playerBack);
-        }else if(Input.GetKeyDown(KeyCode.X) && !blue.isSelect){
+        }else if (Input.GetKeyDown(KeyCode.X) && !blue.isSelect){
             red.Updown(false, playerBack);
             blue.Updown(true, playerBack);
             green.Updown(false, playerBack);
-        }else if(Input.GetKeyDown(KeyCode.C) && !green.isSelect){
+        }else if (Input.GetKeyDown(KeyCode.C) && !green.isSelect){
             red.Updown(false, playerBack);
             blue.Updown(false, playerBack);
             green.Updown(true, playerBack);
+        }
+
+        // Spriteを表示しないようにする(とりあえず)
+        mark1.enabled = false;
+        mark2.enabled = false;
+
+        if(red.isSelect){ // 燃えるゴミ
+            mark1.sprite = moeru;
+            mark1.enabled = true;
+        }else if(blue.isSelect){ // 燃えないゴミ
+            mark1.sprite = moenai;
+            mark1.enabled = true;
+        }else if(green.isSelect){ // びんかん
+            mark1.sprite = bin;
+            mark2.sprite = can;
+            mark1.enabled = true;
+            mark2.enabled = true;
         }
     }
 
