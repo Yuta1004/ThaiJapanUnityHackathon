@@ -189,7 +189,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 38973720}
   m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
-  m_LocalPosition: {x: 0, y: 40, z: -40}
+  m_LocalPosition: {x: 0, y: 40, z: -35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: -50
-  tileSizeZ: 400
+  tileSizeZ: 500
 --- !u!1001 &1659323868
 Prefab:
   m_ObjectHideFlags: 0
@@ -1492,7 +1492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433238248415242, guid: 7320457fc76aa724f8b46cd6d84237f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4433238248415242, guid: 7320457fc76aa724f8b46cd6d84237f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   boundary:
     xMin: -11.5
     xMax: 11.5
-    zMin: 0
-    zMax: 0
+    zMin: 5
+    zMax: 5
   tilt: 0.3
   yFix: -1
 --- !u!136 &2021221456
