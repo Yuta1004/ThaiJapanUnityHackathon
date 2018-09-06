@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
         blue = BlueGarbageBag.GetComponent<Replacement>();
         green = GreenGarbageBag.GetComponent<Replacement>();
 
-        UpdateHP();
+        UpdateHP(0);
 
     }
 
@@ -112,6 +112,9 @@ public class PlayerController : MonoBehaviour {
                 gameController.AddScore(getWasteScore);
                 red.Expansion();
                 Destroy(other.gameObject);
+            }else{
+                UpdateHP(1);
+                Destroy(other.gameObject);
             }
         }
 
@@ -119,6 +122,9 @@ public class PlayerController : MonoBehaviour {
             if (blue.isSelect){
                 gameController.AddScore(getWasteScore);
                 blue.Expansion();
+                Destroy(other.gameObject);
+            }else{
+                UpdateHP(1);
                 Destroy(other.gameObject);
             }
         }
@@ -128,10 +134,15 @@ public class PlayerController : MonoBehaviour {
                 gameController.AddScore(getWasteScore);
                 green.Expansion();
                 Destroy(other.gameObject);
+            }else{
+                UpdateHP(1);
+                Destroy(other.gameObject);
             }
         }
     }
-    void UpdateHP(){
+
+    void UpdateHP(int damage){
+        life -= damage;
         HP.text = "× " + life;
     }
 }
