@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
     public Sprite can;
     public Image mark1;
     public Image mark2;
+    public Text HP;
+    public int life;
 
     private Rigidbody rb;
     private float nextFire;
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour {
         red = RedGarbageBag.GetComponent<Replacement>();
         blue = BlueGarbageBag.GetComponent<Replacement>();
         green = GreenGarbageBag.GetComponent<Replacement>();
+
+        UpdateHP();
 
     }
 
@@ -126,5 +130,8 @@ public class PlayerController : MonoBehaviour {
                 Destroy(other.gameObject);
             }
         }
+    }
+    void UpdateHP(){
+        HP.text = "× " + life;
     }
 }
