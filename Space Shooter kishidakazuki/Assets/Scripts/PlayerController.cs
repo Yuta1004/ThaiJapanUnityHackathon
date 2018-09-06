@@ -95,7 +95,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         if ((other.tag == "Bottle" || other.tag == "Can")){
-            Debug.Log("binnkann");
             if (green.isSelect){
                 gameController.AddScore(getWasteScore);
                 green.Expansion();
