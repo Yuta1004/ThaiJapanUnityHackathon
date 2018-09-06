@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 184853596}
   - component: {fileID: 184853597}
   m_Layer: 0
-  m_Name: Directional light
+  m_Name: sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1350,7 +1350,7 @@ Terrain:
   m_LegacyShininess: 0.078125
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
-  m_ScaleInLightmap: 0.0512
+  m_ScaleInLightmap: 0
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &1437452826
 Transform:
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: -50
-  tileSizeZ: 500
+  tileSizeZ: 400
 --- !u!1001 &1659323868
 Prefab:
   m_ObjectHideFlags: 0
@@ -1551,13 +1551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hazards:
   - {fileID: 1122957293277120, guid: 4bfba9008a74a4a2d9c52b74603cfe06, type: 2}
-  - {fileID: 1473743468262398, guid: 528c45d960f98434f93c4e0124e6a470, type: 2}
-  - {fileID: 1223252131568098, guid: 2252628b92a8a4d35b95a7c81440956b, type: 2}
-  - {fileID: 1520369225843898, guid: 4c2dd95bcb4c748c296c7c80030e31a7, type: 2}
   spawnValues: {x: 3, y: 0, z: 20}
   hazardCount: 10
   spawnWait: 0.5
-  startWait: 1
+  startWait: 100000
   waveWait: 4
   scoreText: {fileID: 1197468511}
   restartText: {fileID: 1205313180}
