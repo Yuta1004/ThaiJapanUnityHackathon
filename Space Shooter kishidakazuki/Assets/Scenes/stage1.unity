@@ -1308,9 +1308,9 @@ MonoBehaviour:
   - {fileID: 1195422253801544, guid: 596cf16179bf048f691a862665985fd5, type: 2}
   - {fileID: 1432811142190784, guid: c7361d8800b16470ba0c052b07872bbc, type: 2}
   - {fileID: 1123323774563740, guid: ae618c46006784ab58b5b2377daab49f, type: 2}
-  spawnValues: {x: 10, y: 0, z: 300}
+  spawnValues: {x: 10, y: 0, z: 550}
   hazardCount: 10
-  spawnWait: 1
+  spawnWait: 1.5
   startWait: 1
   waveWait: 0
   scoreText: {fileID: 1197468511}
