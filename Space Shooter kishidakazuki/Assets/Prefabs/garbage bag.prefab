@@ -138,6 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655a2972b9221430ea7ccba054079c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expansion: 5
+  expansion: 15
   isSelect: 1
   size: {x: 50, y: 50, z: 50}
