@@ -33,5 +33,6 @@ public class HelpScenePopup : MonoBehaviour {
 		}
 		
 		PopupCanvas.enabled = true;
+		PopupCanvasGroup.alpha = 0.05f;
 	}
 }
