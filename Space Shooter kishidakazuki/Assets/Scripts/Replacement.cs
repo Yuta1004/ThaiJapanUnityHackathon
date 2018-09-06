@@ -34,14 +34,10 @@ public class Replacement : MonoBehaviour {
         count = 0;
 	}
 
-    public void Updown(bool Select, Vector3 playerBack){
-        isSelect = Select;
-        if (isSelect){
-            this.transform.position = playerBack;
-        }
-        else{
-            this.transform.position = new Vector3(0, -30, -10);
-        }
+    public void ViewTrashBag(bool select, Vector3 playerBack) {
+        isSelect = select;
+        gameObject.SetActive(select);
+        transform.position = playerBack;
     }
 
     public void Expansion(){

@@ -74,17 +74,17 @@ public class PlayerController : MonoBehaviour {
     void Update(){
         Vector3 playerBack = new Vector3(rb.position.x, 0.0f, 5.0f);
         if (Input.GetKeyDown(KeyCode.Z) && !red.isSelect){
-            red.Updown(true, playerBack);
-            blue.Updown(false, playerBack);
-            green.Updown(false, playerBack);
+            red.ViewTrashBag(true, playerBack);
+            blue.ViewTrashBag(false, playerBack);
+            green.ViewTrashBag(false, playerBack);
         }else if (Input.GetKeyDown(KeyCode.X) && !blue.isSelect){
-            red.Updown(false, playerBack);
-            blue.Updown(true, playerBack);
-            green.Updown(false, playerBack);
+            red.ViewTrashBag(false, playerBack);
+            blue.ViewTrashBag(true, playerBack);
+            green.ViewTrashBag(false, playerBack);
         }else if (Input.GetKeyDown(KeyCode.C) && !green.isSelect){
-            red.Updown(false, playerBack);
-            blue.Updown(false, playerBack);
-            green.Updown(true, playerBack);
+            red.ViewTrashBag(false, playerBack);
+            blue.ViewTrashBag(false, playerBack);
+            green.ViewTrashBag(true, playerBack);
         }
 
         // Spriteを表示しないようにする(とりあえず)
