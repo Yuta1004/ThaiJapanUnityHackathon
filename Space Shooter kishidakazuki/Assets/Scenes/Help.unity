@@ -518,6 +518,11 @@ Prefab:
       propertyPath: Title
       value: "\u307F\u3055\u304D\u3061\u3083\u3093"
       objectReference: {fileID: 0}
+    - target: {fileID: 114049502944586394, guid: 3bcdac46ce9b34695a0d9937585ed800,
+        type: 2}
+      propertyPath: PopupCanvasGroup
+      value: 
+      objectReference: {fileID: 309201765}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3bcdac46ce9b34695a0d9937585ed800, type: 2}
   m_IsPrefabParent: 0
@@ -534,6 +539,7 @@ GameObject:
   - component: {fileID: 309201761}
   - component: {fileID: 309201760}
   - component: {fileID: 309201764}
+  - component: {fileID: 309201765}
   m_Layer: 5
   m_Name: PopupCanvas
   m_TagString: Untagged
@@ -637,6 +643,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fb55c8139cd46d18bf6351b3496391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PopupCanvas: {fileID: 309201762}
+  MCanvasGroup: {fileID: 309201765}
+--- !u!225 &309201765
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309201759}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &478234068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,6 +1790,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 5831328b46fa64ae894591e6c13b4930, type: 3}
+    - target: {fileID: 114980509943834072, guid: c87bdf25618864620a9b55b0c24fbed7,
+        type: 2}
+      propertyPath: MCanvasGroup
+      value: 
+      objectReference: {fileID: 309201765}
+    - target: {fileID: 114980509943834072, guid: c87bdf25618864620a9b55b0c24fbed7,
+        type: 2}
+      propertyPath: PopupCanvas
+      value: 
+      objectReference: {fileID: 309201762}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c87bdf25618864620a9b55b0c24fbed7, type: 2}
   m_IsPrefabParent: 0
@@ -1826,6 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopupCanvas: {fileID: 309201762}
+  PopupCanvasGroup: {fileID: 309201765}
   Title: "\u307F\u3055\u304D\u3061\u3083\u3093"
   Description: "\u4E3B\u4EBA\u516C"
 --- !u!114 &1706209254

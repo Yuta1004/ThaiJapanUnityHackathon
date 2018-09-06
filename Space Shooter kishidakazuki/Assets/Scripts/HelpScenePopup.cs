@@ -7,11 +7,18 @@ using UnityEngine.UI;
 public class HelpScenePopup : MonoBehaviour {
 
 	public Canvas PopupCanvas;
+	public CanvasGroup PopupCanvasGroup;
 	public String Title;
 	[Multiline] public String Description;
 
 	void Start() {
 		PopupCanvas.enabled = false;
+	}
+
+	void Update() {
+		if (PopupCanvas.enabled) {
+			PopupCanvasGroup.alpha += 0.05f;
+		}
 	}
 
 	public void OnClick() {
