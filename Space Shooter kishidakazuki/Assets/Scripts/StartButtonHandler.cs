@@ -16,6 +16,9 @@ public class StartButtonHandler : MonoBehaviour {
 	}
 
 	public void OnClick() {
-		SceneManager.LoadScene("stage1");
+//		SceneManager.LoadScene("stage1");
+	
+		FadeManager mFadeManager = FadeManager.Instance;
+		mFadeManager.LoadScene("stage1", 2.0f);
 	}
 }
