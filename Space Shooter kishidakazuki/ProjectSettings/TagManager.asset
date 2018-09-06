@@ -7,6 +7,13 @@ TagManager:
   - Boundary
   - Enemy
   - GarbageBag
+  - Red
+  - Blue
+  - Green
+  - Combustible
+  - Nonflammable
+  - Bottle
+  - Can
   layers:
   - Default
   - TransparentFX

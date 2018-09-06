@@ -22,10 +22,9 @@ GameObject:
   - component: {fileID: 136870784023889200}
   - component: {fileID: 54947917821542692}
   - component: {fileID: 114678844617702166}
-  - component: {fileID: 114058806422739510}
   m_Layer: 0
   m_Name: Nonflammable Waste
-  m_TagString: Untagged
+  m_TagString: Nonflammable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,18 +129,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114058806422739510
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123323774563740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda1b0f9c8f7840de9ae27ea92c0b7d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 10
 --- !u!114 &114678844617702166
 MonoBehaviour:
   m_ObjectHideFlags: 1

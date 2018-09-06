@@ -22,10 +22,9 @@ GameObject:
   - component: {fileID: 54099951148523414}
   - component: {fileID: 65482200906561492}
   - component: {fileID: 114443475269875708}
-  - component: {fileID: 114129898814085650}
   m_Layer: 0
   m_Name: CombustibleWaste
-  m_TagString: Untagged
+  m_TagString: Combustible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,18 +156,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114129898814085650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1195422253801544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda1b0f9c8f7840de9ae27ea92c0b7d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 10
 --- !u!114 &114443475269875708
 MonoBehaviour:
   m_ObjectHideFlags: 1
