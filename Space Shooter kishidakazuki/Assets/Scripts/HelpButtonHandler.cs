@@ -15,6 +15,7 @@ public class HelpButtonHandler : MonoBehaviour {
 	}
 
 	public void OnClick() {
-		Debug.Log("help button pressed");
+		FadeManager mFadeManager = FadeManager.Instance;
+		mFadeManager.LoadScene("Help", 2.0f);
 	}
 }
