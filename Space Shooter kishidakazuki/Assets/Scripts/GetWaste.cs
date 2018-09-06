@@ -6,6 +6,7 @@ public class GetWaste : MonoBehaviour {
 
     public int scoreValue;
     private GameController gameController;
+    private Replacement replacement;
 
     void Start(){
 
@@ -18,6 +19,16 @@ public class GetWaste : MonoBehaviour {
 
             Debug.Log("Cannot find 'GameController' script");
         }
+
+        GameObject garbageBagObject = GameObject.FindWithTag("GarbageBag");
+        if (garbageBagObject != null){
+
+            replacement = garbageBagObject.GetComponent<Replacement>();
+        }
+        if (replacement == null){
+
+            Debug.Log("Cannot find 'Replacement' script");
+        }
     }
 
     void OnTriggerEnter(Collider other){
@@ -25,6 +36,7 @@ public class GetWaste : MonoBehaviour {
         if (other.tag == "Player"){
 
             gameController.AddScore(scoreValue);
+            replacement.Expansion();
             Destroy(gameObject);
         }
     }
