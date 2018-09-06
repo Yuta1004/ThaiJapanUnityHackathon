@@ -9,10 +9,14 @@ public class Boundary{
 
 
 public class PlayerController : MonoBehaviour {
+    
     public float speed;
     public Boundary boundary;
     public float tilt;
     public float yFix = 0.0f;
+    public GameObject RedGarbageBag;
+    public GameObject BlueGarbageBag;
+    public GameObject GreenGarbageBag;
 
     private Rigidbody rb;
     private float nextFire;
