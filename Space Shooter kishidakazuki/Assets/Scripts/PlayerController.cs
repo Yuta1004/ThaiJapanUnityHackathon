@@ -16,12 +16,10 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody rb;
     private float nextFire;
-    private AudioSource audioSource;
 
     void Start(){
         
         rb = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate(){
