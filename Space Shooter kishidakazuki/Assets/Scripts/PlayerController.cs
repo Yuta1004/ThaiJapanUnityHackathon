@@ -58,6 +58,24 @@ public class PlayerController : MonoBehaviour {
         rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
     }
 
+
+    void Update(){
+        Vector3 playerBack = new Vector3(rb.position.x, 0.0f, 5.0f); 
+        if (Input.GetKeyDown(KeyCode.Z) && !red.isSelect){
+            red.Updown(true, playerBack);
+            blue.Updown(false, playerBack);
+            green.Updown(false, playerBack);
+        }else if(Input.GetKeyDown(KeyCode.X) && !blue.isSelect){
+            red.Updown(false, playerBack);
+            blue.Updown(true, playerBack);
+            green.Updown(false, playerBack);
+        }else if(Input.GetKeyDown(KeyCode.C) && !green.isSelect){
+            red.Updown(false, playerBack);
+            blue.Updown(false, playerBack);
+            green.Updown(true, playerBack);
+        }
+    }
+
     void OnTriggerEnter(Collider other){
 
         if (other.tag == "Combustible"){

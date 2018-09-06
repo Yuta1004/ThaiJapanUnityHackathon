@@ -2481,8 +2481,8 @@ MonoBehaviour:
   tilt: 0.3
   yFix: -1
   RedGarbageBag: {fileID: 1526764304}
-  BlueGarbageBag: {fileID: 1272709917}
-  GreenGarbageBag: {fileID: 2105770301}
+  BlueGarbageBag: {fileID: 2105770301}
+  GreenGarbageBag: {fileID: 1272709917}
   getWasteScore: 10
 --- !u!136 &2021221456
 CapsuleCollider:
