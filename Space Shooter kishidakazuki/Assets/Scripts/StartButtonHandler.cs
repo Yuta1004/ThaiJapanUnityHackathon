@@ -9,6 +9,6 @@ public class StartButtonHandler : MonoBehaviour {
 //		SceneManager.LoadScene("stage1");
 	
 		FadeManager mFadeManager = FadeManager.Instance;
-		mFadeManager.LoadScene("stage1", 2.0f);
+		mFadeManager.LoadScene("StartAnimation", 2.0f);
 	}
 }
