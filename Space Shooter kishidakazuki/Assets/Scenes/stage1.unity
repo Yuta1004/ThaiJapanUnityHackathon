@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hazards:
-  - {fileID: 1808542527836366, guid: eb02216eabd7943c3b077b48ab875e1b, type: 2}
+  - {fileID: 1432811142190784, guid: c7361d8800b16470ba0c052b07872bbc, type: 2}
   spawnValues: {x: 10, y: 0, z: 300}
   hazardCount: 10
   spawnWait: 1
