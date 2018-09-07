@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BGScroller : MonoBehaviour{
-    
+public class BGTitel : MonoBehaviour
+{
+
     public float tileSizeZ;
-    public static float scrollSpeed;
+    public float scrollSpeedTitel;
     private Vector3 startPosition;
 
     void Start(){
@@ -14,7 +15,7 @@ public class BGScroller : MonoBehaviour{
     }
 
     void Update(){
-        float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
+        float newPosition = Mathf.Repeat(Time.time * scrollSpeedTitel, tileSizeZ);
         transform.position = startPosition + Vector3.forward * newPosition;
     }
 }

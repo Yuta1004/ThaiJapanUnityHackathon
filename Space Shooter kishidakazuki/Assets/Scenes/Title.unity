@@ -444,11 +444,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 591685674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b5fc53a7f84a4a04a96ab15916705b6, type: 3}
+  m_Script: {fileID: 11500000, guid: bc3700b5a2d1141ca99a8b4b4b85c378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -20
   tileSizeZ: 200
+  scrollSpeedTitel: -30
 --- !u!1 &600371879
 GameObject:
   m_ObjectHideFlags: 0

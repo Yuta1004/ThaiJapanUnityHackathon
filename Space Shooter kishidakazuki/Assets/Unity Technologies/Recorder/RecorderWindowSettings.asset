@@ -26,7 +26,7 @@ MonoBehaviour:
   m_AssetID: d059870c5c4c243b7b2437c9096a392a
   m_CaptureEveryNthFrame: 1
   m_FrameRateMode: 1
-  m_FrameRate: 30
+  m_FrameRate: 40
   m_FrameRateExact: 1
   m_StartFrame: 0
   m_EndFrame: 10
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_DurationMode: 0
   m_SynchFrameRate: 1
   m_BaseFileName:
-    m_Pattern: test3.<ext>
+    m_Pattern: test5.<ext>
   m_DestinationPath:
     m_root: 1
     m_leaf: Recordings
