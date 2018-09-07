@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void UpdateHP(int damage){
+    public void UpdateHP(int damage){
         life -= damage;
         HP.text = "× " + life;
     }
