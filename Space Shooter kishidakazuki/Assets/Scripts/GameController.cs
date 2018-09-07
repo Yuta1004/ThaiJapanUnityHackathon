@@ -15,10 +15,14 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
     public Text bonusText;
     public int bonusScore;
-
-    private bool gameOver;
-    private int score;
+    public static bool gameOver;
+    
+    private static int score;
     private float waitTime;
+
+    public static int GetScore() {
+        return score;
+    }
 
 	// Use this for initialization
 	void Start (){
@@ -73,10 +77,5 @@ public class GameController : MonoBehaviour {
 
     void DefBonusText(){
         bonusText.text = "";
-    }
-
-    public void GameOver(){
-        
-        gameOver = true;
     }
 }

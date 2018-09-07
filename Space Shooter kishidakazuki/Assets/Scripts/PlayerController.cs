@@ -144,5 +144,16 @@ public class PlayerController : MonoBehaviour {
     public void UpdateHP(int damage){
         life -= damage;
         HP.text = "× " + life;
+
+        if (life <= 0) {
+            GameOver();
+        }
     }
+
+    private void GameOver() {
+        GameController.gameOver = true;
+        FadeManager mFadeManager = FadeManager.Instance;
+        mFadeManager.LoadScene("GameOver", 0.05f);
+    }
+    
 }
