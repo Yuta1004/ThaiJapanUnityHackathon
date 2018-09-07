@@ -9,15 +9,16 @@ public class GameController : MonoBehaviour {
     public GameObject[] hazards;
     public Vector3 spawnValues;
     public int hazardCount;
-    public float spawnWait;
+    public float spawnWaitMax;
+    public float spawnWaitMin;
     public float startWait;
-    public float waveWait;
     public Text scoreText;
     public Text bonusText;
     public int bonusScore;
 
     private bool gameOver;
     private int score;
+    private float waitTime;
 
 	// Use this for initialization
 	void Start (){
@@ -43,9 +44,10 @@ public class GameController : MonoBehaviour {
                                 spawnValues.z);
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(hazard, spawnPosition, spawnRotation);
-                yield return new WaitForSeconds(spawnWait);
+                waitTime = Random.Range(spawnWaitMin, spawnWaitMax);
+                Debug.Log(waitTime);
+                yield return new WaitForSeconds(waitTime);
             }
-            yield return new WaitForSeconds(waveWait);
             if (gameOver){
                 break;
             }

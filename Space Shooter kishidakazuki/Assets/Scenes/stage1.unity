@@ -1336,9 +1336,9 @@ MonoBehaviour:
   - {fileID: 1123323774563740, guid: ae618c46006784ab58b5b2377daab49f, type: 2}
   spawnValues: {x: 10, y: 0, z: 550}
   hazardCount: 10
-  spawnWait: 1.5
+  spawnWaitMax: 1
+  spawnWaitMin: 3
   startWait: 1
-  waveWait: 0
   scoreText: {fileID: 1197468511}
   bonusText: {fileID: 1948008978}
   bonusScore: 100
@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefcbbf48727645b7960e5d70f0e9148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   boundary:
     xMin: -10.8
     xMax: 10.8
