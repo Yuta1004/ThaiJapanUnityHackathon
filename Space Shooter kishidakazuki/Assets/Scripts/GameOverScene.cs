@@ -16,23 +16,23 @@ public class GameOverScene : MonoBehaviour {
 	}
 
 	string GetRank(int score) {
-		if (score >= 12000) {
+		if (score >= 2000) {
 			return "S";
 		}
 		
-		if (score >= 10000) {
+		if (score >= 1500) {
 			return "A";
 		}
 		
-		if (score >= 8000) {
+		if (score >= 1000) {
 			return "B";
 		}
 		
-		if (score >= 6000) {
+		if (score >= 600) {
 			return "C";
 		}
 		
-		if (score >= 3000) {
+		if (score >= 300) {
 			return "D";
 		}
 
