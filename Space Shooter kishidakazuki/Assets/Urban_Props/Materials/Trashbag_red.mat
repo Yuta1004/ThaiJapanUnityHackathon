@@ -29,7 +29,7 @@ Material:
     m_Floats:
     - _Shininess: 0.81179106
     m_Colors:
-    - _Color: {r: 0.85294116, g: 0.019406125, b: 0.006271632, a: 1}
+    - _Color: {r: 0.8161765, g: 0.34942877, b: 0.34207395, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
