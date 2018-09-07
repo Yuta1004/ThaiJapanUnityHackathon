@@ -15,8 +15,10 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
     public Text bonusText;
     public int bonusScore;
+    public float startSpeed;
+    public float pulsSpeed;
     public static bool gameOver;
-    
+
     private static int score;
     private float waitTime;
 
@@ -27,6 +29,8 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start (){
 
+        BGScroller.scrollSpeed = -startSpeed;
+        Mover.speed = -startSpeed;
         gameOver = false;
         bonusText.text = "";
         score = 0;
@@ -51,6 +55,9 @@ public class GameController : MonoBehaviour {
                 waitTime = Random.Range(spawnWaitMin, spawnWaitMax);
                 yield return new WaitForSeconds(waitTime);
             }
+            //徐々に加速
+            BGScroller.scrollSpeed -= pulsSpeed;
+            Mover.speed -= pulsSpeed;
             if (gameOver){
                 break;
             }

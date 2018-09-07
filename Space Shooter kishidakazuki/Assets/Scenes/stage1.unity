@@ -1126,7 +1126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5fc53a7f84a4a04a96ab15916705b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -50
   tileSizeZ: 700
 --- !u!1 &1526764304 stripped
 GameObject:
@@ -1336,12 +1335,14 @@ MonoBehaviour:
   - {fileID: 1123323774563740, guid: ae618c46006784ab58b5b2377daab49f, type: 2}
   spawnValues: {x: 10, y: 0, z: 550}
   hazardCount: 10
-  spawnWaitMax: 1
-  spawnWaitMin: 2
+  spawnWaitMax: 0.5
+  spawnWaitMin: 1.5
   startWait: 1
   scoreText: {fileID: 1197468511}
   bonusText: {fileID: 1948008978}
   bonusScore: 100
+  startSpeed: 50
+  pulsSpeed: 10
 --- !u!4 &1731954619
 Transform:
   m_ObjectHideFlags: 0

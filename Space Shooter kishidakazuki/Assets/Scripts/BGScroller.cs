@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BGScroller : MonoBehaviour{
-
-    public float scrollSpeed;
+    
     public float tileSizeZ;
+    public static float scrollSpeed;
     private Vector3 startPosition;
 
     void Start(){
+        
         startPosition = transform.position;
     }
 
