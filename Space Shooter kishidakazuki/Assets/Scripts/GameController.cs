@@ -58,6 +58,10 @@ public class GameController : MonoBehaviour {
             //徐々に加速
             BGScroller.scrollSpeed -= pulsSpeed;
             Mover.speed -= pulsSpeed;
+            if(BGScroller.scrollSpeed <= 200){
+                spawnWaitMin = 0.3f;
+                spawnWaitMax = 1.0f;
+            }
             if (gameOver){
                 break;
             }
