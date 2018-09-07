@@ -45,7 +45,6 @@ public class GameController : MonoBehaviour {
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(hazard, spawnPosition, spawnRotation);
                 waitTime = Random.Range(spawnWaitMin, spawnWaitMax);
-                Debug.Log(waitTime);
                 yield return new WaitForSeconds(waitTime);
             }
             if (gameOver){
