@@ -1337,7 +1337,7 @@ MonoBehaviour:
   spawnValues: {x: 10, y: 0, z: 550}
   hazardCount: 10
   spawnWaitMax: 1
-  spawnWaitMin: 3
+  spawnWaitMin: 2
   startWait: 1
   scoreText: {fileID: 1197468511}
   bonusText: {fileID: 1948008978}
